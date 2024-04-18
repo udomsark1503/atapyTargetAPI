@@ -1,6 +1,8 @@
-require('dotenv').config();
 const express = require('express');
 const app = express();
+const cors = require('cors'); // import cors module
+
+app.use(cors());
 
 const keywords = [
     "เรารักสถาบันพระมหากษัตรีย์",
